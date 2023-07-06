@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/infinity-react-page/static/css/main.e9a05662.css",
+    "main.js": "/infinity-react-page/static/js/main.3852680a.js",
+    "static/media/homeBanner.png": "/infinity-react-page/static/media/homeBanner.10b41e93c367ef4f9884.png",
+    "static/media/john doe 2.jpg": "/infinity-react-page/static/media/john doe 2.4387bd488136ca268929.jpg",
+    "static/media/john doe 1.jpg": "/infinity-react-page/static/media/john doe 1.9db5845a4d18ba482903.jpg",
+    "static/media/3.jpg": "/infinity-react-page/static/media/3.541533ae705db9f701d6.jpg",
+    "static/media/logo.png": "/infinity-react-page/static/media/logo.e7f52aa11517e63447ee.png",
+    "static/media/pickArts.png": "/infinity-react-page/static/media/pickArts.4564a912549ca693365f.png",
+    "static/media/home-banner-background.png": "/infinity-react-page/static/media/home-banner-background.3a701db248da4da482ba.png",
+    "static/media/about-background.png": "/infinity-react-page/static/media/about-background.93dcc7f4263c985f320e.png",
+    "index.html": "/infinity-react-page/index.html",
+    "main.e9a05662.css.map": "/infinity-react-page/static/css/main.e9a05662.css.map",
+    "main.3852680a.js.map": "/infinity-react-page/static/js/main.3852680a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9a05662.css",
+    "static/js/main.3852680a.js"
+  ]
+}
