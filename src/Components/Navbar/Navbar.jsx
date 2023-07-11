@@ -18,6 +18,7 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import zIndex from "@mui/material/styles/zIndex";
+import { Nav } from "./NavbarStyles";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -52,7 +53,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar-nav">
+    <Nav>
       <div className="nav-logo-container">
         <img src={Logo} alt="Logo" className="logo1" />
       </div>
@@ -96,7 +97,7 @@ const Navbar = () => {
           </List>
         </Box>
       </Drawer>
-    </nav>
+    </Nav>
   );
 };
 
