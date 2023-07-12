@@ -18,9 +18,17 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import zIndex from "@mui/material/styles/zIndex";
-import { Nav } from "./NavbarStyles";
+import {
+  Nav,
+  NavLogo,
+  NavImage,
+  NavLinks,
+  NavButton,
+  NavMenu,
+} from "./NavbarStyles";
+import { animateScroll as scroll } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ hide }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const handleButtonClick = () => {
     if (openMenu) {
@@ -53,11 +61,11 @@ const Navbar = () => {
   ];
 
   return (
-    <Nav>
-      <div className="nav-logo-container">
-        <img src={Logo} alt="Logo" className="logo1" />
-      </div>
-      <div className="navbar-links-container">
+    <Nav hide={hide}>
+      <NavLogo to="/" onClick={scroll.scrollToTop}>
+        <NavImage src={Logo} alt="Logo" />
+      </NavLogo>
+      <NavLinks>
         <a href="">Início</a>
         <a href="">Saiba Mais</a>
         <a href="">Crie sua Imagem</a>
@@ -66,11 +74,11 @@ const Navbar = () => {
         <a href="">
           <ShoppingCartRoundedIcon className="navbar-cart-icon" />
         </a>
-        <button className="primary-button">Peça Já</button>
-      </div>
-      <div className="navbar-menu-container">
+        <NavButton className="primary-button">Peça Já</NavButton>
+      </NavLinks>
+      <NavMenu>
         <ViewHeadlineOutlinedIcon onClick={() => handleButtonClick()} />
-      </div>
+      </NavMenu>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
         <Box
           sx={{

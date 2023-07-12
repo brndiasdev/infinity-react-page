@@ -54,5 +54,6 @@ export const HomeImage = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 105%;
+  height: auto;
+  max-width: 100%;
 `;

@@ -14,27 +14,29 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Home = () => {
   return (
-    <HomeContainer>
+    <>
+      <HomeContainer>
+        <HomeBanner>
+          <BannerImage>
+            <Image src={BannerBackGround} alt="" />
+          </BannerImage>
+          <HomeText>
+            <Heading>Crie o seu quadro da forma que desejar!</Heading>
+            <Text>Infinitas artes, infinitas possibilidades.</Text>
+            <Text>
+              Tudo do seu jeito! Escolha sua moldura e o tamanho de seu quadro!
+            </Text>
+            <PageButton>
+              Peça Já <ArrowForwardIcon />
+            </PageButton>
+          </HomeText>
+          <HomeImage>
+            <Image src={homeBanner} alt="" />
+          </HomeImage>
+        </HomeBanner>
+      </HomeContainer>
       <Navbar />
-      <HomeBanner>
-        <BannerImage>
-          <img className="homeBackground" src={BannerBackGround} alt="" />
-        </BannerImage>
-        <HomeText>
-          <Heading>Crie o seu quadro da forma que desejar!</Heading>
-          <Text>Infinitas artes, infinitas possibilidades.</Text>
-          <Text>
-            Tudo do seu jeito! Escolha sua moldura e o tamanho de seu quadro!
-          </Text>
-          <PageButton>
-            Peça Já <ArrowForwardIcon />
-          </PageButton>
-        </HomeText>
-        <HomeImage>
-          <Image src={homeBanner} alt="" />
-        </HomeImage>
-      </HomeBanner>
-    </HomeContainer>
+    </>
   );
 };
 

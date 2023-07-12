@@ -1,24 +1,17 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  background: ${({ hide }) => (hide ? "transparent" : "transparent")};
-  margin-top: -80px;
-  height: 80px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
+  justify-content: space-between; /* Aligns content with equal spacing between */
+  padding: 0 25px 0 25px;
+  align-items: center; /* Vertically center aligns the content */
+  background-color: rgba(255, 255, 255, 0.2);
+  position: fixed;
   top: 0;
-  z-index: 50;
-  @media screen and (min-width: 920px) {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  @media screen and (max-width: 920px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  min-height: 90px;
 `;
 
 export const NavLogo = styled.div`
@@ -75,7 +68,7 @@ export const NavButton = styled.button`
 `;
 
 export const NavMenu = styled.div`
-  @media (max-width: 920px) {
+  @media (max-width: 800px) {
     display: flex;
   }
   display: none;

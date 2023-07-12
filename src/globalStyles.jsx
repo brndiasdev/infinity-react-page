@@ -6,7 +6,13 @@ const GlobalStyles = createGlobalStyle`
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-}`;
+}
+body {
+  background-color: #f6f6f6;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+`;
 
 export const Row = styled.div`
   display: flex;
@@ -100,11 +106,13 @@ export const PageButton = styled.button`
 
   &:hover:before {
     height: 500%;
+    /* background-color: rgb(234, 234, 234); */
   }
 
   &:hover {
     transition: all 0.6s ease;
     color: black;
+    /* background-color: rgb(234, 234, 234); */
   }
   @media screen and (max-width: 800px) {
     font-size: 1rem;
@@ -118,7 +126,7 @@ export const BannerImage = styled.div`
   top: -50px;
   right: -50px;
   z-index: -2;
-  max-width: 700px;
+  max-width: 100%;
   height: auto;
   width: 100vh;
   object-fit: cover;
