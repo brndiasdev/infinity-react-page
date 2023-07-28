@@ -14,6 +14,17 @@ body {
 }
 `;
 
+export const Container = styled.div`
+  width: 100%;
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  @media screen and (max-width: 960px) {
+    padding: 0 30px;
+  }
+`;
+
 export const Row = styled.div`
   display: flex;
   justify-content: ${({ justify }) => (justify ? justify : "")};
